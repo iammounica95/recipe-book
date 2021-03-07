@@ -2,9 +2,10 @@
   "name": "recipe-book",
   "version": "1.0.0",
   "description": "Online recipe application",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -15,11 +16,13 @@
   ],
   "author": "Mounica Tanikella",
   "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-nightly.620",
+    "parcel": "^2.0.0-beta.1",
+    "sass": "^1.26.10"
+  },
   "bugs": {
     "url": "https://github.com/iammounica95/recipe-book/issues"
   },
-  "homepage": "https://github.com/iammounica95/recipe-book#readme",
-  "devDependencies": {
-    "parcel": "^2.0.0-nightly.618"
-  }
+  "homepage": "https://github.com/iammounica95/recipe-book#readme"
 }
